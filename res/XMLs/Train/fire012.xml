@@ -1,0 +1,125 @@
+<annotation>
+    <folder>img</folder>
+    <filename>fire012.png</filename>
+    <path>D:\proyectorobotica\Seafile\TEC-Forest-Fire-Detection\imgs-datasets\fismo\FiSmo-Images\BoWFire\dataset\img\fire012.png</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>1365</width>
+        <height>1024</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>fire</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>680</xmin>
+            <ymin>606</ymin>
+            <xmax>691</xmax>
+            <ymax>616</ymax>
+        </bndbox>
+    </object>    <object>
+        <name>fire</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>668</xmin>
+            <ymin>604</ymin>
+            <xmax>674</xmax>
+            <ymax>610</ymax>
+        </bndbox>
+    </object>    <object>
+        <name>fire</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>523</xmin>
+            <ymin>562</ymin>
+            <xmax>534</xmax>
+            <ymax>572</ymax>
+        </bndbox>
+    </object>    <object>
+        <name>fire</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>536</xmin>
+            <ymin>554</ymin>
+            <xmax>550</xmax>
+            <ymax>572</ymax>
+        </bndbox>
+    </object>    <object>
+        <name>fire</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>524</xmin>
+            <ymin>536</ymin>
+            <xmax>534</xmax>
+            <ymax>546</ymax>
+        </bndbox>
+    </object>    <object>
+        <name>fire</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>536</xmin>
+            <ymin>535</ymin>
+            <xmax>549</xmax>
+            <ymax>553</ymax>
+        </bndbox>
+    </object>    <object>
+        <name>fire</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>407</xmin>
+            <ymin>102</ymin>
+            <xmax>1051</xmax>
+            <ymax>676</ymax>
+        </bndbox>
+    </object>    <object>
+        <name>fire</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>887</xmin>
+            <ymin>66</ymin>
+            <xmax>888</xmax>
+            <ymax>67</ymax>
+        </bndbox>
+    </object>    <object>
+        <name>fire</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>974</xmin>
+            <ymin>0</ymin>
+            <xmax>975</xmax>
+            <ymax>2</ymax>
+        </bndbox>
+    </object>    <object>
+        <name>fire</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>730</xmin>
+            <ymin>0</ymin>
+            <xmax>961</xmax>
+            <ymax>86</ymax>
+        </bndbox>
+    </object>
+</annotation>

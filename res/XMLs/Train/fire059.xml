@@ -1,0 +1,26 @@
+<annotation>
+    <folder>img</folder>
+    <filename>fire059.png</filename>
+    <path>D:\proyectorobotica\Seafile\TEC-Forest-Fire-Detection\imgs-datasets\fismo\FiSmo-Images\BoWFire\dataset\img\fire059.png</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>709</width>
+        <height>473</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>fire</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>318</xmin>
+            <ymin>253</ymin>
+            <xmax>541</xmax>
+            <ymax>419</ymax>
+        </bndbox>
+    </object>
+</annotation>
