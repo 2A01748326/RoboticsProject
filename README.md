@@ -7,7 +7,7 @@ Robotics Project Repository - Wildfire Detection system
 - Es necesario cambiar la ruta en la cual se guardará el modelo entrenado
 
 
-## Se necesitan las imágenes y los archivos XML con sus anotaciones, en la carpeta src se encuentra un archivo de jupyter y uno de python con la misma funcionalidad y solo es necesario usar uno de los dos:
+### Se necesitan las imágenes y los archivos XML con sus anotaciones, en la carpeta src se encuentra un archivo de jupyter y uno de python con la misma funcionalidad y solo es necesario usar uno de los dos:
 
 
 - Los archivos deben de ser modificados en la línea pertinente para colocar el path de las imágenes en Seafile donde se encuentran las imágenes binarias a entrenar. Se indica qué tan profundo se debe de seguir.
@@ -16,16 +16,19 @@ Robotics Project Repository - Wildfire Detection system
 
 ### Si se desea entrenar la red con una gpu (RECOMENDABLE) es necesario hacer lo siguiente.
 
-Verificar la compatibilidad de tu gpu con cuda, seguir los pasos del siguiente foro: https://stackoverflow.com/questions/60987997/why-torch-cuda-is-available-returns-false-even-after-installing-pytorch-with
-Instalar una versión de cuda compatible con tu gpu y sistema operativo. https://pytorch.org/get-started/locally/
-Instalar nanodet: https://github.com/RangiLyu/nanodet#install, sin embargo es necesario modificar un comando para que todo esté correcto.
-Comando a modificar: conda install pytorch torchvision cudatoolkit=11.1 -c pytorch -c conda-forge, en el parámetro de cudatoolkit=11.1 debes cambiar el valor de 11.1 a la versión que tengas instalada en tu computadora. 
-Verificar que todo esté correctamente instalado: 
-Inicializar la máquina virtual de nanodet.
+- Verificar la compatibilidad de tu gpu con cuda, seguir los pasos del siguiente foro: https://stackoverflow.com/questions/60987997/why-torch-cuda-is-available-returns-false-even-after-installing-pytorch-with
+- Instalar una versión de cuda compatible con tu gpu y sistema operativo. https://pytorch.org/get-started/locally/
+- Instalar nanodet: https://github.com/RangiLyu/nanodet#install, sin embargo es necesario modificar un comando para que todo esté correcto.
+- Comando a modificar: conda install pytorch torchvision cudatoolkit=11.1 -c pytorch -c conda-forge, en el parámetro de cudatoolkit=11.1 debes cambiar el valor de 11.1 a la versión que tengas instalada en tu computadora. 
+- Verificar que todo esté correctamente instalado: 
+  - Inicializar la máquina virtual de nanodet.
 Colocarse en el path de nanodet
 Ejecutar python y correr los siguientes comandos:
->>>> import troch
->>>> torch.cuda.is_available()
+
+```shell script
+ import troch
+ ```
+ torch.cuda.is_available()
 		El resultado debería dar True.
 Seguir los pasos de entrenamiento de nanodet : 
 Para poder entrenar la red, es necesario crear un archivo .xml, se proporciona un archivo de ejemplo. Dentro de este archivo se hacen las configuraciones deseadas, para modificar correctamente este archivo referirse al siguiente link, paso 2: https://github.com/RangiLyu/nanodet#how-to-train
