@@ -7,14 +7,14 @@ Robotics Project Repository - Wildfire Detection system
 - Es necesario cambiar la ruta en la cual se guardará el modelo entrenado
 
 
-##Se necesitan las imágenes y los archivos XML con sus anotaciones, en la carpeta src se encuentra un archivo de jupyter y uno de python con la misma funcionalidad y solo es necesario usar uno de los dos:
+## Se necesitan las imágenes y los archivos XML con sus anotaciones, en la carpeta src se encuentra un archivo de jupyter y uno de python con la misma funcionalidad y solo es necesario usar uno de los dos:
 
 
 - Los archivos deben de ser modificados en la línea pertinente para colocar el path de las imágenes en Seafile donde se encuentran las imágenes binarias a entrenar. Se indica qué tan profundo se debe de seguir.
 - Teniendo en cuenta que los programas se encuentran en la carpeta de src del github, correr el programa genera los archivos XML y copia las imágenes a la carpeta res, pero ya lo hace separándolos en entrenamiento y validación.
 - Correr un archivo de python, ya sea todo el jupyter o el .py
 
-###Si se desea entrenar la red con una gpu (RECOMENDABLE) es necesario hacer lo siguiente.
+### Si se desea entrenar la red con una gpu (RECOMENDABLE) es necesario hacer lo siguiente.
 
 Verificar la compatibilidad de tu gpu con cuda, seguir los pasos del siguiente foro: https://stackoverflow.com/questions/60987997/why-torch-cuda-is-available-returns-false-even-after-installing-pytorch-with
 Instalar una versión de cuda compatible con tu gpu y sistema operativo. https://pytorch.org/get-started/locally/
