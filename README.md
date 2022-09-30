@@ -22,18 +22,34 @@ Robotics Project Repository - Wildfire Detection system
 - Comando a modificar: conda install pytorch torchvision cudatoolkit=11.1 -c pytorch -c conda-forge, en el parámetro de cudatoolkit=11.1 debes cambiar el valor de 11.1 a la versión que tengas instalada en tu computadora. 
 - Verificar que todo esté correctamente instalado: 
   - Inicializar la máquina virtual de nanodet.
-Colocarse en el path de nanodet
-Ejecutar python y correr los siguientes comandos:
+  - Colocarse en el path de nanodet
+  - Ejecutar python y correr los siguientes comandos:
 
-```shell script
- import troch
- ```
- torch.cuda.is_available()
-		El resultado debería dar True.
+  ```shell script
+  import troch
+  torch.cuda.is_available()
+  ```
+	El resultado debería dar True.
 Seguir los pasos de entrenamiento de nanodet : 
 Para poder entrenar la red, es necesario crear un archivo .xml, se proporciona un archivo de ejemplo. Dentro de este archivo se hacen las configuraciones deseadas, para modificar correctamente este archivo referirse al siguiente link, paso 2: https://github.com/RangiLyu/nanodet#how-to-train
 En la parte de device colocar el identificador de gpu que deseas, si tienes una sola gpu colocar: [0].
 Finalmente correr el siguiente comando: 
+```shell script
 python tools/train.py CONFIG_FILE_PATH
+ ```
 En caso de sufrir un error de memoria al iniciar el entrenamiento, se debe modificar el tamaño de batch en la línea 91 del config file.
 
+### Para entrenar la red usando CPU es necesario realizar pasos similares pero no tantos:
+
+- Instalar nanodet: https://github.com/RangiLyu/nanodet#install, sin embargo es necesario modificar un comando para que todo esté correcto.
+- Comando a modificar: conda install pytorch torchvision cudatoolkit=11.1 -c pytorch -c conda-forge, en su lugar se utiliza: conda install pytorch torchvision torchaudio cpuonly -c pytorch
+- Verificar que todo esté correctamente instalado: 
+  - Inicializar la máquina virtual de nanodet.
+  - Colocarse en el path de nanodet
+- Seguir los pasos de entrenamiento de nanodet : 
+- Para poder entrenar la red, es necesario crear un archivo .xml, se proporciona un archivo de ejemplo. Dentro de este archivo se hacen las configuraciones deseadas, para modificar correctamente este archivo referirse al siguiente link, paso 2: https://github.com/RangiLyu/nanodet#how-to-train
+- En la parte de device colocar el identificador de cpu: -1.
+- Finalmente correr el siguiente comando: 
+  ```shell script
+  python tools/train.py CONFIG_FILE_PATH
+ ```
