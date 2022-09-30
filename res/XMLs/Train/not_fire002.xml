@@ -1,7 +1,7 @@
 <annotation>
-    <folder>img</folder>
+    <folder>Train</folder>
     <filename>not_fire002.png</filename>
-    <path>D:\proyectorobotica\Seafile\TEC-Forest-Fire-Detection\imgs-datasets\fismo\FiSmo-Images\BoWFire\dataset\img\not_fire002.png</path>
+    <path>d:\proyectorobotica\RoboticsProject\res\Images\Train\not_fire002.png</path>
     <source>
         <database>Unknown</database>
     </source>

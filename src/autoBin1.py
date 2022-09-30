@@ -99,7 +99,10 @@ for i in range(len(colorList)):
     # print(binInputImage)
     contours, _ = cv2.findContours(binInputImage, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     # print(binInputImage.shape)
-    writer = Writer(os.path.join(colorImgPath, colorList[i]), colorInputImage.shape[1], colorInputImage.shape[0])
+    if cont == 10:
+        writer = Writer(os.path.join(imgValPath, colorList[i]), colorInputImage.shape[1], colorInputImage.shape[0])
+    else:
+        writer = Writer(os.path.join(imgTrainPath, colorList[i]), colorInputImage.shape[1], colorInputImage.shape[0])
     for c in contours:
         # Compute blob bounding rectangle:
         blobRectangle = cv2.boundingRect(c)
