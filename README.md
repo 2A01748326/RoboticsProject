@@ -52,4 +52,4 @@ En caso de sufrir un error de memoria al iniciar el entrenamiento, se debe modif
 - Finalmente correr el siguiente comando: 
   ```shell script
   python tools/train.py CONFIG_FILE_PATH
- ```
+  ```
